@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\OptionalUseCase\\OptionalUseCase.csproj",
+      "projectUniqueName": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\OptionalUseCase.csproj",
       "projectName": "OptionalUseCase",
-      "projectPath": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\OptionalUseCase\\OptionalUseCase.csproj",
+      "projectPath": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\OptionalUseCase.csproj",
       "packagesPath": "C:\\Users\\chalv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\OptionalUseCase\\obj\\",
+      "outputPath": "C:\\Users\\chalv\\source\\repos\\VasileiosChalvatzidopoulos\\OptionalScheduluxe\\OptionalUseCase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
