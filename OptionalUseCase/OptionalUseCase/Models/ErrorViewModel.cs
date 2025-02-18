@@ -1,4 +1,4 @@
-namespace test22222.Models
+namespace OptionalUseCase.Models
 {
     public class ErrorViewModel
     {
