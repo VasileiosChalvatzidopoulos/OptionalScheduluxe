@@ -3,7 +3,7 @@ using System.Reflection.Emit;
 using OptionalUseCase.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace EditProfileApp.Data
+namespace OptionalUseCase.Data
 {
     public class AppDbContext : DbContext
     {
