@@ -20,6 +20,29 @@ namespace EditProfileApp.Controllers
             return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _context.Users
+                    .FirstOrDefaultAsync(u => u.UserName == model.Username && u.Password == model.Password);
+
+                if (user != null)
+                {
+                    HttpContext.Session.SetString("UserId", user.Id.ToString());
+                    HttpContext.Session.SetString("Username", user.UserName);
+
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Username or password is incorrect.");
+                }
+            }
+            return View(model);
+        }
+
         public IActionResult Register()
         {
             return View();
