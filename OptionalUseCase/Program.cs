@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add Session Service
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -11,10 +12,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// Add MVC Service
 builder.Services.AddControllersWithViews();
 
+//  Add HttpContextAccessor for use in Views (_LoginPartial.cshtml)
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+// Connection with MySQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySQL(
         builder.Configuration.GetConnectionString("Default")
@@ -32,6 +36,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+// Activate Session
 app.UseSession();
 app.UseAuthorization();
 

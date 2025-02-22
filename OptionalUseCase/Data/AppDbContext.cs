@@ -11,6 +11,7 @@ namespace OptionalUseCase.Data
         {
         }
 
+        // DbSet for Users that repesents the "travelers" table
         public DbSet<Users> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -19,9 +20,13 @@ namespace OptionalUseCase.Data
 
             builder.Entity<Users>(entity =>
             {
+                // Map the entity with the "travelers" table
                 entity.ToTable("travelers");
 
+                // Set the primary key
                 entity.HasKey(e => e.Id);
+
+                // Map attributes to the columns of the DB
                 entity.Property(e => e.Id).HasColumnName("userid").ValueGeneratedOnAdd();
                 entity.Property(e => e.UserName).HasColumnName("UserName");
                 entity.Property(e => e.Password).HasColumnName("Password");

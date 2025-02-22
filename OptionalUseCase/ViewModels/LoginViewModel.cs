@@ -2,6 +2,7 @@
 
 namespace OptionalUseCase.ViewModels
 {
+    // View Model for the Login 
     public class LoginViewModel
     {
         [Required(ErrorMessage = "Username is required.")]

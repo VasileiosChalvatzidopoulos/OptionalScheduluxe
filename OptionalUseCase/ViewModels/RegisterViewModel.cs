@@ -2,6 +2,7 @@
 
 namespace OptionalUseCase.ViewModels
 {
+    // View Model for the Register
     public class RegisterViewModel
     {
         [Required(ErrorMessage = "First Name is required.")]

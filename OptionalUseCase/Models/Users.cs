@@ -1,5 +1,6 @@
 ﻿namespace OptionalUseCase.Models
 {
+    // Model of the User table
     public class Users
     {
         public int Id { get; set; }

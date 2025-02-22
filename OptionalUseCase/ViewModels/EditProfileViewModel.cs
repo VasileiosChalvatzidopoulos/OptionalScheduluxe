@@ -2,6 +2,7 @@
 
 namespace OptionalUseCase.ViewModels
 {
+    // View Model for the Edit Profile
     public class EditProfileViewModel
     {
         [Required]
