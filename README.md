@@ -10,8 +10,7 @@
 
 Setup και εκτέλεση:
 
-Για να εκτελέσει κάποιος το use case της εφαρμογής πρέπει να κατεβάσει από το github το αποθετήριο και να το ανοίξει μέσω visual studio. Έπειτα, πρέπει να κατεβάσει 2 πακέτα: 1) Microsoft.EntityFrameworkCore.Tools 9.0.2 και
-2) MySql.EntityFrameworkCore 9.0.0
+Για να εκτελέσει κάποιος το use case της εφαρμογής πρέπει να κατεβάσει από το github το αποθετήριο και να το ανοίξει μέσω visual studio (δηλαδή πατώντας Code και Open in Visual Studio). Έπειτα, πρέπει να κατεβάσει το πακέτο: MySql.EntityFrameworkCore 9.0.0
 Στη συνέχεια, πατώντας το κατάλληλο κουμπί για να τρέξει η εφαρμογή (local host), ο χρήστης βλέπει ένα μενού. Για να μπορέσει να επεξεργαστεί το προφίλ του θα πρέπει είτε να κάνει log in (πχ ένας λογαριασμός username = lalala, password = 12345678) είτε register (και μετά login) αν δεν έχει λογαριασμό, συμπληρώνοντας όλα τα πεδία. Όταν έχει κάνει login, ο χρήστης μπορεί να πατήσει το κουμπί EditProfile και να αλλάξει την προσυμπληρωμένη φόρμα με τα στοιχεία του προφίλ του. ΠΡΟΣΟΧΗ! Λόγω κάποιων πολυπλοκών που αντιμετώπησα στη δημιουργία της εργασίας και της έλλειψης χρόνου, ο χρήστης πρέπει οπωσδήποτε να συμπληρώσει το πεδίο Password είτε με τον παλιό του κωδικό είτε με ένα καινούριο (ουσιαστικά αλλάζοντάς τον).
 Τέλος απλά πρέπει να πατήσει Save Changes.
 
@@ -27,8 +26,8 @@ Setup και εκτέλεση:
 Βοήθεια από πηγές και ΠΤΝ:
 
 Καθώς οι γνώσεις μου σε ASP NET MVC ήταν μηδενικές πριν την έναρξη συγγραφής της συγκεκριμένης εργασίας, χρησιμοποίησα με εποικοδομητικό και εμπνευστικό τρόπο ορισμένες πηγές του διαδικτύου, όπως: 
-https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-9.0&tabs=visual-studio
-https://www.youtube.com/watch?v=hthzKj05w3w
+1) https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-9.0&tabs=visual-studio
+2) https://www.youtube.com/watch?v=hthzKj05w3w
 
 Όσον αφορά τη χρήση ΠΤΝ, χρησιμοποίησα τη δωρεάν έκδοση του ChatGPT (ChatGPT-3.5): 
 
