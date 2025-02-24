@@ -4,7 +4,7 @@ using OptionalUseCase.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace EditProfileApp.Controllers
+namespace OptionalUseCase.Controllers
 {
     public class AccountController : Controller
     {
