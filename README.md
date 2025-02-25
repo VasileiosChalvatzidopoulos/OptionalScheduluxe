@@ -52,7 +52,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 ________________________________________
 Προτροπή 2:
 Ερώτηση:
-Πρέπει να κάνω κάτι διαφορετκό για να δουλέψουν τα sessions στο ASP.NET Core MVC; Θέλω να αποθηκεύω το UserId μετά το login.
+Πρέπει να κάνω κάτι διαφορετκό για να λετουργήσουν τα sessions στο ASP.NET Core MVC; Θέλω να αποθηκεύω το UserId μετά το login.
 Απάντηση:
 Ναι, για να δουλέψουν τα Sessions στο ASP.NET Core MVC, πρέπει να:
 1.	Προσθέσεις τη ρύθμιση για τα Sessions στο Program.cs:
@@ -85,7 +85,7 @@ app.MapControllerRoute(
 ________________________________________
 Προτροπή 4:
 Ερώτηση:
-Θέλω να προσθέσω έναν έλεγχο για το αν υπάρχει ήδη το Username κατά την εγγραφή. γίνεται αυτό μέσα στο Controller;
+Θέλω να προσθέσω έναν έλεγχο για το αν υπάρχει ήδη το Username κατά την εγγραφή. γίνεται αυτό μέσα στο controller;
 Απάντηση:
 Ναι, μπορείς να το κάνεις μέσα στο Register() action στο AccountController χρησιμοποιώντας κάτι σαν αυτό:
 if (_context.Users.Any(u => u.UserName == model.Username))
